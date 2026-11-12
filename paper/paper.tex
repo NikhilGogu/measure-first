@@ -1,0 +1,65 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext}
+\usepackage[varqu,scaled=0.94]{zi4}
+\usepackage{newtxmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage[font=small,labelfont=bf,skip=6pt]{caption}
+\usepackage[numbers,sort&compress]{natbib}
+\definecolor{linkblue}{HTML}{1F4E9E}
+\input{meta}
+\usepackage[colorlinks=true,allcolors=linkblue,bookmarksnumbered=true,bookmarksopen=true,
+  pdftitle={\papertitle},pdfauthor={\paperauthor},
+  pdfsubject={Gemma 4 Developer Agent Competition, paper track},
+  pdfkeywords={coding agents, small language models, evaluation, LoRA, software engineering}]{hyperref}
+\usepackage{bookmark}
+
+% no paragraph is split across pages; pages end on one baseline
+\clubpenalty=10000 \widowpenalty=10000 \displaywidowpenalty=10000 \interlinepenalty=10000
+\flushbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em plus 0.35em minus 0.1em}
+\setlist{itemsep=0.25em plus 0.1em,topsep=0.2em,parsep=0pt,leftmargin=1.4em}
+\setlength{\bibsep}{0.2em plus 0.2em}
+\renewcommand{\bibfont}{\footnotesize\raggedright}
+\setlength{\emergencystretch}{1.5em}
+\hyphenation{sub-process fast-api py-dan-tic star-lette}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}{0.2em plus 0.2em}{-0.6em}{\normalfont\normalsize\bfseries}}
+\renewcommand{\section}{\@startsection{section}{1}{\z@}{1.1em plus 0.5em minus 0.2em}{0.35em plus 0.1em}{\normalfont\large\bfseries}}
+\makeatother
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries \papertitle\par}
+  \vspace{0.55em}
+  {\large \papersubtitle\par}
+  \vspace{1.2em}
+  {\large \paperauthor\par}
+\end{center}
+\vspace{0.4em}
+
+\begin{center}
+\begin{minipage}{0.88\linewidth}
+\small
+\textbf{Abstract.}\enspace
+\input{abstract}
+\end{minipage}
+\end{center}
+\vspace{0.4em}
+
+\input{body}
+
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+\end{document}

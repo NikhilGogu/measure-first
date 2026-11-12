@@ -1,0 +1,181 @@
+{
+ "LICENSE": {
+  "changed": false,
+  "md5": "3b83ef96387f14655fc854ddc3c6bd57",
+  "source": "repo/release_src/LICENSE",
+  "source_md5": "3b83ef96387f14655fc854ddc3c6bd57"
+ },
+ "README.md": {
+  "changed": false,
+  "md5": "989b539159c684f1dcc03a0d0083d6c3",
+  "source": "repo/release_src/README.md",
+  "source_md5": "989b539159c684f1dcc03a0d0083d6c3"
+ },
+ "cx/apply.py": {
+  "changed": false,
+  "md5": "402cb054dcbe4b1b6f8f2e2cdab8e3f4",
+  "note": "differs from the copy embedded in install.py",
+  "source": "repo/tools/apply.py",
+  "source_md5": "402cb054dcbe4b1b6f8f2e2cdab8e3f4"
+ },
+ "cx/cx.py": {
+  "changed": false,
+  "md5": "dea554a169432d5b15e89834f9761ba2",
+  "source": "repo/tools/cx.py",
+  "source_md5": "dea554a169432d5b15e89834f9761ba2"
+ },
+ "cx/find.py": {
+  "changed": false,
+  "md5": "f58138d90608e1ca2be79b006bc5084d",
+  "source": "embedded in cx/skill/scripts/install.py"
+ },
+ "cx/skill/SKILL.md": {
+  "changed": false,
+  "md5": "ee8e8f825628ea8c7694fc558837d7da",
+  "source": "bundle/skills/tools/SKILL.md",
+  "source_md5": "ee8e8f825628ea8c7694fc558837d7da"
+ },
+ "cx/skill/scripts/install.py": {
+  "changed": false,
+  "md5": "867faca38ee50c61868140c0862c50b7",
+  "source": "bundle/skills/tools/scripts/install.py",
+  "source_md5": "867faca38ee50c61868140c0862c50b7"
+ },
+ "cx/t.py": {
+  "changed": false,
+  "md5": "a8a483785d5f874c93a5f78afb710e91",
+  "source": "embedded in cx/skill/scripts/install.py"
+ },
+ "cx/tests/test_apply.sh": {
+  "changed": false,
+  "md5": "312fcd22710be10e5d38b77da6743b94",
+  "source": "repo/tests/test_apply.sh",
+  "source_md5": "312fcd22710be10e5d38b77da6743b94"
+ },
+ "cx/tests/test_apply2.sh": {
+  "changed": false,
+  "md5": "f32ebe035f321f33a2697ddbed008283",
+  "source": "repo/tests/test_apply2.sh",
+  "source_md5": "f32ebe035f321f33a2697ddbed008283"
+ },
+ "cx/tests/test_cx.sh": {
+  "changed": false,
+  "md5": "9268dd28bc3dd7fcb98e719754211f79",
+  "source": "repo/tests/test_cx.sh",
+  "source_md5": "9268dd28bc3dd7fcb98e719754211f79"
+ },
+ "cx/tests/test_cx2.sh": {
+  "changed": false,
+  "md5": "84b386e26797078a4c5f15fe207bdf8c",
+  "source": "repo/tests/test_cx2.sh",
+  "source_md5": "84b386e26797078a4c5f15fe207bdf8c"
+ },
+ "cx/tests/test_cx3.sh": {
+  "changed": true,
+  "md5": "42ee13a1096ec47f3a05a4325b368b29",
+  "source": "repo/tests/test_cx3.sh",
+  "source_md5": "4b8db1eb3a561792743f23f54b9e9dad"
+ },
+ "cx/tests/test_cx4.sh": {
+  "changed": true,
+  "md5": "3fd420829035cb896e768165ab09cf54",
+  "source": "repo/tests/test_cx4.sh",
+  "source_md5": "8c6b60dc5b1788ccd158f1c893eb15d3"
+ },
+ "cx/tests/test_cx5.sh": {
+  "changed": true,
+  "md5": "e6b6e764856f469e983ad00300c2ca72",
+  "source": "repo/tests/test_cx5.sh",
+  "source_md5": "b502ab3395912d9c18126b3e45197f78"
+ },
+ "cx/tests/test_cx6.sh": {
+  "changed": true,
+  "md5": "ad7b853ab79127bbc01a568926617b46",
+  "source": "repo/tests/test_cx6.sh",
+  "source_md5": "20710dadf7c18674580d0ed94412eccb"
+ },
+ "env/ENV.md": {
+  "changed": false,
+  "md5": "698a5b3b30f8f0aeb777b5fa4ffb65f1",
+  "source": "repo/release_src/env/ENV.md",
+  "source_md5": "698a5b3b30f8f0aeb777b5fa4ffb65f1"
+ },
+ "env/mkenv.sh": {
+  "changed": false,
+  "md5": "561c4b0db2d4a2c537bb03ba29d22d5c",
+  "source": "archive/src/mkenv.sh",
+  "source_md5": "561c4b0db2d4a2c537bb03ba29d22d5c"
+ },
+ "env/pad_wheel.py": {
+  "changed": false,
+  "md5": "4aefb0b012d7ad6f7685e545c0ee0b37",
+  "source": "repo/tools/pad_wheel.py",
+  "source_md5": "4aefb0b012d7ad6f7685e545c0ee0b37"
+ },
+ "harness/loop_screen.py": {
+  "changed": false,
+  "md5": "ec5a06f9c8d51d1209b13ed85197da9d",
+  "source": "repo/tools/loop_screen.py",
+  "source_md5": "ec5a06f9c8d51d1209b13ed85197da9d"
+ },
+ "harness/project_l4.py": {
+  "changed": false,
+  "md5": "6f2b387b843e9002a9de535141ed2623",
+  "source": "archive/src/harness/project_l4.py",
+  "source_md5": "6f2b387b843e9002a9de535141ed2623"
+ },
+ "harness/rebench_eval.py": {
+  "changed": true,
+  "md5": "011d47a9e6f328f6c9cdfe4e5f3e1f21",
+  "source": "repo/tools/rebench_eval.py",
+  "source_md5": "46fb7b31a822c41ac93c7bb609c8266b"
+ },
+ "harness/run_eval.py": {
+  "changed": true,
+  "md5": "825c1719ce92589313581388eadda35d",
+  "source": "archive/src/harness/run_eval.py",
+  "source_md5": "70ad58fe546a571f66ad1adf08c8bba7"
+ },
+ "harness/serve.py": {
+  "changed": true,
+  "md5": "3af17a0ea4f6234a000c4cf95fe01ae6",
+  "source": "archive/src/harness/serve.py",
+  "source_md5": "3e1a1cee74aca796d60595343d0f9b44"
+ },
+ "harness/verify_gold.py": {
+  "changed": true,
+  "md5": "bb92c0f7b94f9e2b6bb87fe54e7ce746",
+  "source": "archive/src/harness/verify_gold.py",
+  "source_md5": "8ec20396d1dfa1acdb5d16394bc8c576"
+ },
+ "pipeline/build_sft_clean.py": {
+  "changed": true,
+  "md5": "156de04a26f6a915798f923200861cc7",
+  "source": "repo/tools/build_sft_clean.py",
+  "source_md5": "04f149c5d3a16d13a467edd3dc91f64f"
+ },
+ "pipeline/tokproxy.py": {
+  "changed": false,
+  "md5": "514f361db0aba970e012cbbe9b2955ff",
+  "source": "archive/src/harness/tokproxy.py",
+  "source_md5": "514f361db0aba970e012cbbe9b2955ff"
+ },
+ "pipeline/train_lora.py": {
+  "changed": true,
+  "md5": "5b4915221e467f5ba292b311ee2ce172",
+  "source": "repo/tools/train_lora.py",
+  "source_md5": "9072efffaf72be4bcf4baf41351b1f39"
+ },
+ "tasks/ood86.jsonl": {
+  "md5": "69b17b9139efd7e167c9d9fe107b23ef",
+  "source": "built from the task files"
+ },
+ "tasks/public50.txt": {
+  "md5": "78982cc1153e0793d646376991555e81",
+  "source": "built from the task files"
+ },
+ "tasks/train_pools.jsonl": {
+  "md5": "3545fd93aaee6767008fcce02b364ba7",
+  "source": "built from the task files"
+ }
+}

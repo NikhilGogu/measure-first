@@ -1,0 +1,40 @@
+% Packing: consecutive calls of one task share their prefix; one sequence, one loss span per call.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+  \definecolor{ctx}{HTML}{D9DEE6}
+  \definecolor{obs}{HTML}{EEF0F3}
+  \definecolor{gen}{HTML}{1F4E9E}
+  \newcommand{\seg}[5]{\fill[#5] (#1,#3) rectangle (#2,#3+0.42);\draw[white,line width=0.6pt] (#1,#3) rectangle (#2,#3+0.42);\node[anchor=center,text=#4] at ({(#1+#2)/2},#3+0.21) {\footnotesize #4};}
+  % row labels
+  \node[anchor=east] at (-0.15,3.21) {call 1};
+  \node[anchor=east] at (-0.15,2.61) {call 2};
+  \node[anchor=east] at (-0.15,2.01) {call 3};
+  % call 1
+  \fill[ctx] (0,3.0) rectangle (4.2,3.42); \node at (2.1,3.21) {\footnotesize system prompt and task};
+  \fill[gen] (4.2,3.0) rectangle (5.4,3.42); \node[text=white] at (4.8,3.21) {\footnotesize $c_1$};
+  % call 2
+  \fill[ctx] (0,2.4) rectangle (4.2,2.82);
+  \fill[ctx!70!white] (4.2,2.4) rectangle (5.4,2.82); \node at (4.8,2.61) {\footnotesize $c_1$};
+  \fill[obs] (5.4,2.4) rectangle (7.0,2.82); \node at (6.2,2.61) {\footnotesize tool result};
+  \fill[gen] (7.0,2.4) rectangle (8.2,2.82); \node[text=white] at (7.6,2.61) {\footnotesize $c_2$};
+  % call 3
+  \fill[ctx] (0,1.8) rectangle (4.2,2.22);
+  \fill[ctx!70!white] (4.2,1.8) rectangle (5.4,2.22); \node at (4.8,2.01) {\footnotesize $c_1$};
+  \fill[obs] (5.4,1.8) rectangle (7.0,2.22); \node at (6.2,2.01) {\footnotesize tool result};
+  \fill[ctx!70!white] (7.0,1.8) rectangle (8.2,2.22); \node at (7.6,2.01) {\footnotesize $c_2$};
+  \fill[obs] (8.2,1.8) rectangle (9.8,2.22); \node at (9.0,2.01) {\footnotesize tool result};
+  \fill[gen] (9.8,1.8) rectangle (11.0,2.22); \node[text=white] at (10.4,2.01) {\footnotesize $c_3$};
+  % arrow
+  \draw[-{Latex[length=2.2mm]},line width=0.6pt,black!70] (5.5,1.6) -- (5.5,1.05);
+  % packed
+  \node[anchor=east] at (-0.15,0.61) {packed};
+  \fill[ctx] (0,0.4) rectangle (4.2,0.82); \node at (2.1,0.61) {\footnotesize system prompt and task};
+  \fill[gen] (4.2,0.4) rectangle (5.4,0.82); \node[text=white] at (4.8,0.61) {\footnotesize $c_1$};
+  \fill[obs] (5.4,0.4) rectangle (7.0,0.82); \node at (6.2,0.61) {\footnotesize tool result};
+  \fill[gen] (7.0,0.4) rectangle (8.2,0.82); \node[text=white] at (7.6,0.61) {\footnotesize $c_2$};
+  \fill[obs] (8.2,0.4) rectangle (9.8,0.82); \node at (9.0,0.61) {\footnotesize tool result};
+  \fill[gen] (9.8,0.4) rectangle (11.0,0.82); \node[text=white] at (10.4,0.61) {\footnotesize $c_3$};
+  \foreach \a/\b in {4.2/5.4,7.0/8.2,9.8/11.0} {\draw[gen,line width=0.7pt] (\a,0.3) -- (\a,0.22) -- (\b,0.22) -- (\b,0.3);}
+  \node[text=gen] at (4.8,0.02) {\footnotesize loss span 1};
+  \node[text=gen] at (7.6,0.02) {\footnotesize loss span 2};
+  \node[text=gen] at (10.4,0.02) {\footnotesize loss span 3};
+\end{tikzpicture}

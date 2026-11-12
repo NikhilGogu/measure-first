@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code or these task lists, please cite the paper."
+title: "Measure first: local scoring and training for small Gemma 4 coding agents"
+authors:
+  - family-names: Gogu
+    given-names: Nikhil Reddy
+date-released: 2026-11-12
+license: Apache-2.0
+repository-code: "https://github.com/NikhilGogu/measure-first"
